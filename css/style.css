@@ -66,12 +66,12 @@ h1 {
 
 .filterarea select,
 .filterarea input {
-  padding: 14px 18px;
+  padding: 12px 16px;
   border: 1px solid #ddd;
   border-radius: 24px;
   border-color: #007bff;
   font-size: 16px;
-  width: 250px;
+  width: 240px;
   transition: all 0.3s ease;
 }
 
@@ -124,7 +124,7 @@ h1 {
 /* Card Styles */
 .card {
   background-color: rgba(37, 100, 235, 0.2);
-  padding: 35px;
+  padding: 30px;
   border-radius: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
@@ -168,16 +168,16 @@ h1 {
 }
 
 .pagination button {
-  padding: 12px 16px;
+  padding: 10px 14px;
   border: 2px solid #0558F2;
   background-color: white;
   color: #0558F2;
   border-radius: 100px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   transition: all 0.3s ease;
-  min-width: 44px;
+  min-width: 42px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(5, 88, 242, 0.1);
 }
@@ -211,7 +211,7 @@ h1 {
 #detail-container {
   max-width: 800px;
   margin: 30px auto;
-  padding: 30px;
+  padding: 35px;
   background-color: white;
   border-radius: 18px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -281,7 +281,7 @@ h1 {
 }
 
 #detail-container section {
-  margin: 30px 0;
+  margin: 25px 0;
   padding: 20px 0;
   border-bottom: 1px solid rgba(5, 88, 242, 0.1);
 }
@@ -305,7 +305,7 @@ h1 {
 
 #detail-container section p,
 #detail-container section li {
-  line-height: 3.0;
+  line-height: 1.8;
   color: #000000;
 }
 
@@ -491,7 +491,7 @@ header a:hover {
 }
  
 .learnmore {
-  padding: 15px 45px;
+  padding: 14px 40px;
   background: linear-gradient(135deg, #0558F2 0%, #03338C 100%);
   color: white;
   font-size: 16px;
@@ -500,7 +500,7 @@ header a:hover {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 20px;
+  margin-top: 18px;
   box-shadow: 0 4px 15px rgba(5, 88, 242, 0.3);
 }
 
@@ -563,8 +563,8 @@ header a:hover {
 .about-demo {
   max-width: 800px;
   margin: 0px auto;
-  padding: 120px;
-  margin-top: 40vh;
+  padding: 80px 40px;
+  margin-top: 55vh;
 }
 
 .about-demo h2 {
@@ -633,11 +633,11 @@ header a:hover {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 50px 35px;
+    padding: 40px 30px;
     background-color: #f9f9f9;
     border-radius: 24px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    min-height: 300px;
+    min-height: 280px;
 }
 
 #orange-card, #purple-card {
@@ -648,9 +648,9 @@ header a:hover {
 }
 
 .obj-cards img {
-    width: 65px;
+    width: 60px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .obj-cards p {
@@ -764,10 +764,11 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
-    width: 700px;
-    max-width: 50%;
-    margin: 25vh auto;
+    min-height: 35vh;
+    width: 650px;
+    max-width: 55%;
+    margin: 20vh auto;
+    padding: 40px;
 }
 
 .purpose-card:hover {
