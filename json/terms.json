@@ -166,9 +166,9 @@
     "sampleProblem": {
       "question": "Find the mean of 80, 90, and 100.",
       "solution": [
-        "Step 1: Add all values",
+        "Add all values",
         "80 + 90 + 100 = 270",
-        "Step 2: Divide by number of values",
+        "Divide by number of values",
         "270 ÷ 3 = 90"
       ],
       "answer": "90"
