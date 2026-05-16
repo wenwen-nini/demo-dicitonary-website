@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive-sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../images/logo.png" alt="Logo">
+
+        <a href="../index.html">Home</a>
+        <a href="dictionary.html">Dictionary</a>
+        <a href="quiz.html">Practice</a>
+        <a href="about.html" class="active">About</a>
+    </nav>
+
+    <h1 style="text-align: center; margin: 30px 0;">Practice Modes</h1>
+    <p style="text-align: center; margin: 10px 0 30px 0;">Choose a quiz mode to test your knowledge</p>
+
+    <div class="quiz-mode-container" style="display: flex; justify-content: center; gap: 30px; padding: 40px 20px; flex-wrap: wrap;">
+        <a href="mcq.html" style="text-decoration: none;">
+            <div class="quiz-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; width: 100%; max-width: 300px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 28px; margin: 0 0 10px 0;">Multiple Choice</h2>
+                <p style="margin: 0; font-size: 14px; opacity: 0.9;">Answer questions with 4 options and get instant feedback</p>
+            </div>
+        </a>
+
+        <a href="flashcard.html" style="text-decoration: none;">
+            <div class="quiz-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; width: 100%; max-width: 300px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 28px; margin: 0 0 10px 0;">Flashcards</h2>
+                <p style="margin: 0; font-size: 14px; opacity: 0.9;">Flip cards to test your memory and understanding</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

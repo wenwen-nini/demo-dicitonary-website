@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Study - Dictionary Website</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive-sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="../images/logo.png" alt="Logo">
+        <a href="../index.html">Home</a>
+        <a href="dictionary.html">Dictionary</a>
+        <a href="quiz.html" class="active">Practice</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <div class="flashcard-study-container">
+        <div class="flashcard-navigation">
+            <button class="nav-arrow prev-btn">← Back</button>
+            <div class="flashcard-progress">Card 1 of 30</div>
+            <button class="nav-arrow next-btn">Forward →</button>
+        </div>
+        
+        <div class="flashcard-container">
+            <div class="flashcard-front">
+                <p>Loading flashcard...</p>
+            </div>
+        </div>
+
+        <div class="flashcard-rating">
+            <button class="rating-btn good-btn">✓ Good</button>
+            <button class="rating-btn bad-btn">✗ Not Good</button>
+        </div>
+    </div>
+
+    <script src="../js/flashcard.js"></script>
+</body>
+</html>
