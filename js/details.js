@@ -75,14 +75,14 @@ fetch("../json/terms.json")
           html += `<li>
             <strong>${detail.english}</strong>
             ${detail.filipino ? `<br><em>${detail.filipino}</em>` : ''}
-            ${detail.definition ? `<br>${detail.definition}` : ''}
+            ${detail.definition ? `<br><strong>Kahulugan:</strong> ${detail.definition}` : ''}
             ${detail.example ? `<br><strong>Halimbawa:</strong> ${detail.example}` : ''}`;
           html += `<ol>`;
           detail.types.forEach(type => {
             html += `<li>
               <strong>${type.english}</strong>
               ${type.filipino ? `<br><em>${type.filipino}</em>` : ''}
-              ${type.definition ? `<br>${type.definition}` : ''}
+              ${type.definition ? `<br><strong>Kahulugan:</strong> ${type.definition}` : ''}
               ${type.example ? `<br><strong>Halimbawa:</strong> ${type.example}` : ''}
             </li>`;
           });
@@ -91,7 +91,7 @@ fetch("../json/terms.json")
           html += `<li>
             <strong>${detail.english}</strong>
             ${detail.filipino ? `<br><em>${detail.filipino}</em>` : ''}
-            ${detail.definition ? `<br>${detail.definition}` : ''}
+            ${detail.definition ? `<br><strong>Kahulugan:</strong> ${detail.definition}` : ''}
             ${detail.example ? `<br><strong>Halimbawa:</strong> ${detail.example}` : ''}
           </li>`;
         }
@@ -106,7 +106,7 @@ fetch("../json/terms.json")
         html += `<li>
           <strong>${type.english}</strong>
           ${type.filipino ? `<br><em>${type.filipino}</em>` : ''}
-          ${type.definition ? `<br>${type.definition}` : ''}
+          ${type.definition ? `<br><strong>Kahulugan:</strong> ${type.definition}` : ''}
           ${type.example ? `<br><strong>Halimbawa:</strong> ${type.example}` : ''}
         </li>`;
       });

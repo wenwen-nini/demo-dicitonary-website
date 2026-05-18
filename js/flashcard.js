@@ -127,31 +127,50 @@ function markBad() {
 
 // Next card
 function nextCard() {
-  if (currentCardIndex < flashcards.length - 1) {
-    const cardContainer = document.querySelector('.flashcard-container');
+  const cardContainer = document.querySelector('.flashcard-container');
+  const goodBtn = document.querySelector('.good-btn');
+  const badBtn = document.querySelector('.bad-btn');
+  
+  // Disable buttons to prevent spam/double-clicking
+  if (goodBtn) goodBtn.disabled = true;
+  if (badBtn) badBtn.disabled = true;
+  
+  // Animate out to the left
+  cardContainer.classList.add('slide-out-left');
+  
+  // Wait for animation to complete, then display new card or results
+  setTimeout(() => {
+    currentCardIndex++;
+    cardContainer.classList.remove('slide-out-left');
     
-    // Animate out to the left
-    cardContainer.classList.add('slide-out-left');
-    
-    // Wait for animation to complete, then display new card
-    setTimeout(() => {
-      currentCardIndex++;
-      cardContainer.classList.remove('slide-out-left');
+    if (currentCardIndex < flashcards.length) {
       cardContainer.classList.add('slide-in-right');
       displayCard();
       
       // Remove animation class after it completes
       setTimeout(() => {
         cardContainer.classList.remove('slide-in-right');
+        // Re-enable buttons
+        if (goodBtn) goodBtn.disabled = false;
+        if (badBtn) badBtn.disabled = false;
       }, 400);
-    }, 400);
-  }
+    } else {
+      // Show results when all cards are done
+      displayCard();
+    }
+  }, 400);
 }
 
 // Previous card
 function previousCard() {
   if (currentCardIndex > 0) {
     const cardContainer = document.querySelector('.flashcard-container');
+    const goodBtn = document.querySelector('.good-btn');
+    const badBtn = document.querySelector('.bad-btn');
+    
+    // Disable buttons during transition
+    if (goodBtn) goodBtn.disabled = true;
+    if (badBtn) badBtn.disabled = true;
     
     // Animate out to the right
     cardContainer.classList.add('slide-out-right');
@@ -166,6 +185,9 @@ function previousCard() {
       // Remove animation class after it completes
       setTimeout(() => {
         cardContainer.classList.remove('slide-in-left');
+        // Re-enable buttons
+        if (goodBtn) goodBtn.disabled = false;
+        if (badBtn) badBtn.disabled = false;
       }, 400);
     }, 400);
   }
