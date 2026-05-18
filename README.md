@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 # SIBAT - Bilingual Statistics Dictionary
 
 ## Project Overview
 
-**SIBAT** (A Bilingual Statistics Dictionary for Students) is an interactive web-based dictionary designed to help students learn and understand statistical and data science terms in both **English and Filipino**. The website provides simple definitions, examples, and an easy-to-navigate interface for exploring various statistical concepts.
+**SIBAT** (A Bilingual Statistics Dictionary for Students) is an interactive web-based dictionary designed to help students learn and understand statistical and data science terms in both **English and Filipino**. The website provides simple definitions, examples, interactive learning tools, and an easy-to-navigate interface for exploring various statistical concepts.
 
 ## Features
 
@@ -12,6 +11,9 @@
 - 🔍 Filter terms by category
 - 📱 Responsive web design
 - ✨ Interactive user interface
+- 🎓 Flashcard learning tool for memorization
+- ❓ Multiple choice quiz mode
+- 🧠 Quiz functionality for self-assessment
 
 ## Project Structure
 
@@ -24,11 +26,16 @@ Dictionary Website/
 ├── html/
 │   ├── about.html         # About page
 │   ├── details.html       # Term details page
-│   └── dictionary.html    # Dictionary page with search and filter
+│   ├── dictionary.html    # Dictionary page with search and filter
+│   ├── flashcard.html     # Flashcard learning tool
+│   ├── mcq.html           # Multiple choice quiz mode
+│   └── quiz.html          # Quiz self-assessment tool
 ├── images/
 │   └── icons/             # Icon assets
 ├── js/
 │   ├── details.js         # JavaScript for details page
+│   ├── flashcard.js       # JavaScript for flashcard functionality
+│   ├── mcq.js             # JavaScript for MCQ functionality
 │   └── script.js          # Main JavaScript functionality
 └── json/
     └── terms.json         # Database of all statistical terms
@@ -66,13 +73,18 @@ If you must change the directory structure, you will need to:
 2. Click on "Dictionary" to browse all available terms
 3. Use the filter dropdown to view terms by category
 4. Click on any term to see its full definition and example
+5. Try the "Flashcard" tool to memorize terms with interactive flashcards
+6. Take the "MCQ Quiz" to practice with multiple choice questions
+7. Use the "Quiz" tool to assess your knowledge
 
 ## Files Overview
 
 | File | Purpose |
-|------|---------|
-| `index.html` | Landing page with project introduction |
-| `html/dictionary.html` | Main dictionary with browsing and filtering functionality |
+|--html/flashcard.html` | Interactive flashcard learning mode |
+| `html/mcq.html` | Multiple choice quiz mode for practice |
+| `html/quiz.html` | Quiz tool for self-assessment |
+| `js/flashcard.js` | JavaScript for flashcard learning functionality |
+| `js/mcq.js` | JavaScript for MCQ quiz functionalitywsing and filtering functionality |
 | `html/about.html` | Information about the project |
 | `html/details.html` | Detailed view of individual dictionary terms |
 | `css/style.css` | All styling and responsive design |
@@ -173,4 +185,3 @@ After editing `terms.json`, you can validate the JSON by:
 This website works best in modern browsers (Chrome, Firefox, Safari, Edge) with JavaScript enabled.
 =======
 # SIBAT
->>>>>>> 8c306fd6176d4b97221529c6893e2c760b127cd5
